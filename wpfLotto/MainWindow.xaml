@@ -1,0 +1,349 @@
+﻿<Window x:Class="wpfLotto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfLotto"
+        mc:Ignorable="d"
+        Title="Lotto" Height="450" Width="450">
+    <StackPanel Name ="containerCanvas" Margin="10">
+        <TextBox Height="45" TextWrapping="Wrap" Text="Lotto" VerticalAlignment="Top" TextAlignment="Center" FontSize="30" Margin="10" IsEnabled="False" FontWeight="Bold" FontFamily="Arial Black" BorderBrush="white"/>
+        <Grid Height = "280">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Row="0" Grid.Column="0" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_1_1" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="0" Grid.Column="1" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_1_2" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="0" Grid.Column="2" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_1_3" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="0" Grid.Column="3" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_1_4" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="0" Grid.Column="4" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_1_5" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="0" Grid.Column="5" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_1_6" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Button Grid.Row="0" Grid.Column="6" Margin="5" FontSize="15" Click="btnManual_1_Click" FontFamily="Arial Black" Foreground="#FF515050" BorderBrush="DarkGray">
+                수동
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="7" Margin="5" FontSize="15" Click="btnAuto_1_Click" FontFamily="Arial Black" Foreground="#FF515050" BorderBrush="DarkGray">
+                자동
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <TextBox Grid.Row="1" Grid.Column="0" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_2_1" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_2_2" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="1" Grid.Column="2" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_2_3" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="1" Grid.Column="3" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_2_4" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="1" Grid.Column="4" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_2_5" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="1" Grid.Column="5" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_2_6" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Button Grid.Row="1" Grid.Column="6" Margin="5" FontSize="15" Click="btnManual_2_Click" FontFamily="Arial Black" Foreground="#FF515050" BorderBrush="DarkGray">수동
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="7" Margin="5" FontSize="15" Click="btnAuto_2_Click" FontFamily="Arial Black" Foreground="#FF515050" BorderBrush="DarkGray">자동
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <TextBox Grid.Row="2" Grid.Column="0" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_3_1" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_3_2" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="2" Grid.Column="2" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_3_3" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="2" Grid.Column="3" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_3_4" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="2" Grid.Column="4" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_3_5" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="2" Grid.Column="5" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_3_6" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Button Grid.Row="2" Grid.Column="6" Margin="5" FontSize="15" Click="btnManual_3_Click" FontFamily="Arial Black" Foreground="#FF515050" BorderBrush="DarkGray">수동
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="2" Grid.Column="7" Margin="5" FontSize="15" Click="btnAuto_3_Click" FontFamily="Arial Black" Foreground="#FF515050" BorderBrush="DarkGray">자동
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <TextBox Grid.Row="3" Grid.Column="0" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_4_1" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_4_2" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="3" Grid.Column="2" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_4_3" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="3" Grid.Column="3" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_4_4" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="3" Grid.Column="4" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_4_5" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="3" Grid.Column="5" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_4_6" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Button Grid.Row="3" Grid.Column="6" Margin="5" FontSize="15" Click="btnManual_4_Click" FontFamily="Arial Black" Foreground="#FF515050" BorderBrush="DarkGray">수동
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="3" Grid.Column="7" Margin="5" FontSize="15" Click="btnAuto_4_Click" FontFamily="Arial Black" Foreground="#FF515050" BorderBrush="DarkGray">자동
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <TextBox Grid.Row="4" Grid.Column="0" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_5_1" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="4" Grid.Column="1" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_5_2" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="4" Grid.Column="2" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_5_3" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="4" Grid.Column="3" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_5_4" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="4" Grid.Column="4" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_5_5" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <TextBox Grid.Row="4" Grid.Column="5" FontSize="20" TextAlignment="Center" Margin="5" Name="tb_5_6" IsEnabled="False" FontFamily="Arial Black" Foreground="#FF515050" VerticalContentAlignment="Center">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Button Grid.Row="4" Grid.Column="6" Margin="5" FontSize="15" Click="btnManual_5_Click" FontFamily="Arial Black" Foreground="#FF515050" BorderBrush="DarkGray">수동
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="4" Grid.Column="7" Margin="5" FontSize="15" Click="btnAuto_5_Click" FontFamily="Arial Black" Foreground="#FF515050" BorderBrush="DarkGray">자동
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+        </Grid>
+        <Grid Height = "50">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" Margin="5" FontSize="16" Click="btnResult_Click" FontFamily="Arial Black" Foreground="#FF515050" BorderBrush="DarkGray">로또추첨
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="1" Margin="5" FontSize="16" Click="btnReset_Click" FontFamily="Arial Black" Foreground="#FF515050" BorderBrush="DarkGray">다시하기
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="2" Margin="5" FontSize="16" Click="btnClose_Click" IsCancel="True" FontFamily="Arial Black" Foreground="#FF515050" BorderBrush="DarkGray">종료
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </StackPanel>
+</Window>
